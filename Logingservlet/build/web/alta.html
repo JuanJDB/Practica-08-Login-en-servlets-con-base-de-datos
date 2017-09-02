@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        <title>Registro | 5IM6</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3 style="font-family: sans-serif;font-size: 32px;">Registro</h3>
+            <form name="formulario" action="altas" method="post">
+                <label>Usuario:</label>
+                <input type="text" name="usuario" maxlength="35" id="usuario" placeholder="Ingresa nombre de usuario"/> 
+                <label>Contraseña:</label>
+                <input type="password" name="pass" maxlength="35" id="contra" placeholder="Ingresa password"/>
+                <label>Confirme contraseña:</label>
+                <input type="password" name="pass" maxlength="35" id="contra2" placeholder="Ingresa password"/>
+                <input type="submit" name="registrar" value="Registrar"/>
+            </form> 
+            
+            <form name="formulario" action="index.html" method="post" class="altabtn">
+                <input type="submit" name="regresar" value="Regresar">
+            </form>
+            
+            <script>
+                function contrasenas(){
+                    var pass1;
+                    var pass2;
+                    
+                    pass1 = document.getElementById("contra");
+                    pass2 = document.getElementById("contra2");
+                    
+                    if(pass1 === pass2)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

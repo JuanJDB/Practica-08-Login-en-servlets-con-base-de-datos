@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login | 5IM6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h3 style="font-family: sans-serif;font-size: 32px;">Login</h3>
+            <form name="formulario" action="consu" method="post">
+                <label>Usuario:</label>
+                <input type="text" name="usuario" maxlength="35" id="usuario" placeholder="Ingresa nombre de usuario"/> 
+                <label>Contraseña:</label>
+                <input type="password" name="pass" maxlength="35" id="contra" placeholder="Ingresa password"/> 
+                <input type="submit" name="entrar" value="Entrar"/>
+            </form> 
+            
+            <form name="formulario" action="alta.html" method="post" class="altabtn">
+                <input type="submit" name="registrar" value="Registrar">
+            </form>
+        </div>
+    </body>
+</html>
