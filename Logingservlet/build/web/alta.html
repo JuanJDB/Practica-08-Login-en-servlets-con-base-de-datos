@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+AUTOR: Monroy Gonzalez Juan Ignacio / J.Carlos Nevarez Tovar 5IM6
+VERSIÓN: 1.0 
+DESCRIPCIÓN: Login con conexion a bases de datos con servlets
+COMPILACIÓN: Se compila en tiempo de ejecución. 
+EJECUCIÓN: Ejecutando la pagina con GlashFish server y subiendo una base de datos MYSQL.
 -->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--Referencia a la hoja de css-->
         <link rel="stylesheet" type="text/css" href="css/login.css"/>
         <title>Registro | 5IM6</title>
     </head>
     <body>
         <div class="container">
             <h3 style="font-family: sans-serif;font-size: 32px;">Registro</h3>
+            <!--Formulario que enviara los datos al servidor-->
             <form name="formulario" action="altas" method="post">
                 <label>Usuario:</label>
                 <input type="text" name="usuario" maxlength="35" id="usuario" placeholder="Ingresa nombre de usuario"/> 
@@ -20,14 +24,17 @@ and open the template in the editor.
                 <input type="password" name="pass" maxlength="35" id="contra" placeholder="Ingresa password"/>
                 <label>Confirme contraseña:</label>
                 <input type="password" name="pass" maxlength="35" id="contra2" placeholder="Ingresa password"/>
+                <!--Boton que envia el request, es procesado en el paquete: Servlets.altas.java-->
                 <input type="submit" name="registrar" value="Registrar"/>
             </form> 
             
             <form name="formulario" action="index.html" method="post" class="altabtn">
+                <!--Boton que lleva de nuevo al login-->
                 <input type="submit" name="regresar" value="Regresar">
             </form>
             
             <script>
+                //Funcion para validar doble password
                 function contrasenas(){
                     var pass1;
                     var pass2;
@@ -43,7 +50,7 @@ and open the template in the editor.
                     {
                         return false;
                     }
-                }
+                }//Fin De la funcion
             </script>
         </div>
     </body>

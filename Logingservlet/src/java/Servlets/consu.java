@@ -1,7 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    AUTOR: Juan Ignacio Monroy Gonzalez 5IM6
+    VERSIÓN: 1.0 
+    DESCRIPCIÓN: Clase de java que hace una consulta a la base datos
+    OBSERVACIONES: Completar consulta
+    COMPILACIÓN: Se compila en tiempo de ejecución. 
+    EJECUCIÓN: Ejecutando la pagina con GlashFish server y subiendo una base de datos MYSQL.
  */
 package Servlets;
 
@@ -18,8 +21,9 @@ import javax.servlet.http.*;
 import java.sql.*;
 
 /**
- * @version 1.0 30/08/2017
- * @author Nevarezz Tovar Juan Carlos, Monroy Gonzalez Juan Ignacio
+ * @version v1.0.1
+ * @author Monroy Gonzalez Juan Ignacio
+ * @since 30/08/2017
  */
 @WebServlet(name = "consu", urlPatterns = {"/consu"})
 public class consu extends HttpServlet {
